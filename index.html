@@ -13,29 +13,28 @@
             <button id="dark-button"><i class="fa fa-moon-o" aria-hidden="true"></i></button>
         </header>
         <div class="display">
-
+            <input type="text" id="display" readonly>
         </div>
         <section class="calculator-buttons-wrapper">
-            <button type="button">AC</button>
-            <button type="button">DEL</button>
-            <button type="button">%</button>
-            <button type="button">÷</button>
-            <button type="button">7</button>
-            <button type="button">8</button>
-            <button type="button">9</button>
-            <button type="button">x</button>
-            <button type="button">4</button>
-            <button type="button">5</button>
-            <button type="button">6</button>
-            <button type="button">-</button>
-            <button type="button">1</button>
-            <button type="button">2</button>
-            <button type="button">3</button>
-            <button type="button">+</button>
-            <button type="button">00</button>
-            <button type="button">0</button>
-            <button type="button">.</button>
-            <button type="button">=</button>
+            <button type="button" onclick="clearDisplay()" id="ac-btn">AC</button>
+            <button type="button" onclick="appendToDisplay('%')">%</button>
+            <button type="button" onclick="appendToDisplay('÷')">÷</button>
+            <button type="button" onclick="appendToDisplay('7')">7</button>
+            <button type="button" onclick="appendToDisplay('8')">8</button>
+            <button type="button" onclick="appendToDisplay('9')">9</button>
+            <button type="button" onclick="appendToDisplay('*')">*</button>
+            <button type="button" onclick="appendToDisplay('4')">4</button>
+            <button type="button" onclick="appendToDisplay('5')">5</button>
+            <button type="button" onclick="appendToDisplay('6')">6</button>
+            <button type="button" onclick="appendToDisplay('-')">-</button>
+            <button type="button"onclick="appendToDisplay('1')">1</button>
+            <button type="button"onclick="appendToDisplay('2')">2</button>
+            <button type="button"onclick="appendToDisplay('3')">3</button>
+            <button type="button"onclick="appendToDisplay('+')">+</button>
+            <button type="button" onclick="appendToDisplay('00')">00</button>
+            <button type="button"onclick="appendToDisplay('0')">0</button>
+            <button type="button"onclick="appendToDisplay('.')">.</button>
+            <button type="button"onclick="calculate()">=</button>
         </section>
     </div>
     <script src="script.js"></script>

@@ -19,8 +19,14 @@ body {
 }
 
 .dark-theme header,
-.dark-theme .calculator-buttons-wrapper button {
+.dark-theme .calculator-buttons-wrapper button,
+.dark-theme .calculator-wrapper .display input {
     background-color: #292D36;
+    color: #f0f0f090;
+}
+
+.dark-theme .calculator-buttons-wrapper button:hover {
+    background-color: #22252D;
 }
 
 .dark-theme .calculator-buttons-wrapper button {
@@ -70,17 +76,30 @@ header button i {
 
 .calculator-wrapper .display {
     width: 100%;
-    height: 180px;
+    height: 200px;
     padding: 50px 20px;
+}
+
+.calculator-wrapper .display input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: none;
     text-align: right;
+    background-color: #f9f9f9;
+    font-size: 40px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.calculator-wrapper .display input:focus {
+    outline: none;
 }
 
 .calculator-buttons-wrapper {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border-radius:30px;
-    background-color: #f9f9f9;
     padding: 35px 20px;
     gap: 20px;
 }
@@ -89,20 +108,31 @@ header button i {
     height: 80px;
     border: none;
     background-color: #f0f0f090;
-    opacity: 0.7;
     border-radius: 10px;
     font-size: 25px;
     color: #000;
 }
 
+.calculator-buttons-wrapper button:hover {
+    background-color: #f0f0f0;
+}
+
+#ac-btn {
+    grid-column: 1/3;
+}
+
 .calculator-buttons-wrapper button:nth-child(1),
 .calculator-buttons-wrapper button:nth-child(2),
 .calculator-buttons-wrapper button:nth-child(3) {
-    color: aqua;
+    color: rgb(67, 223, 223);
 }
 
-.calculator-buttons-wrapper button:nth-child(4n) {
-    color: orangered
+.calculator-buttons-wrapper button:nth-child(7),
+.calculator-buttons-wrapper button:nth-child(11) ,
+.calculator-buttons-wrapper button:nth-child(15) ,
+.calculator-buttons-wrapper button:nth-child(19)  {
+    color: orangered;
+    font-size: 30px;
 }
 
 
