@@ -161,10 +161,10 @@ header button i {
 
     .calculator-buttons-wrapper {
         padding: 5px 10px;
-        gap: 10px;
+        gap: 15px;
     }
 
     .calculator-buttons-wrapper button {
-        height: 60px;
+        height: 62px;
     }
 }
